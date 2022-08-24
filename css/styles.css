@@ -1,3 +1,64 @@
+/* Vars */
+:root {
+  --color-font-white: #fff;
+  --color-default: #333;
+  --color-bg-1: #ea03ff;
+  --color-bg-2: #0097ff;
+  --color-bg-3: rgba(25, 11, 122, 0.7);
+  --color-shadow-1: rgba(50, 50, 93, 0.25);
+  --color-shadow-2: rgba(0, 0, 0, .3);
+
+}
+
+
+/* Reset */
 * {
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-default);
+}
+
+html, body {
+  height: auto;
+  min-height: 100vh;
+}
+
+html {
+  background: linear-gradient(180deg, var(--color-bg-1) 0%, var(--color-bg-2) 100%);
+}
+
+input:focus {
+  outline: none;
+}
+
+#register-container {
+  max-width: 900px;
+  min-height: 80vh;
+  margin: 2rem auto;
+  display: flex;
+  box-shadow: var(--color-shadow-1) 0px 13px 27px -5px, var(--color-shadow-2) 0px 8px 16px -8px;
+}
+
+#register-banner {
+  background: url('../imgs/bg-form-min.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+#register-banner h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-font-white);
+  word-spacing: 50rem;
+}
+
+#banner-layer {
+  background-color: var(--color-bg-3);
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
 }
